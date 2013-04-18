@@ -131,14 +131,19 @@ h5 {
   width: 140px;
 }
 #speakers,
-#sponsors {
+#sponsors,
+#previous {
   float: left;
   margin-left: 20px;
-  width: 460px;
+  width: 300px;
 }
 #speakers p,
-#sponsors p {
-  padding: 1em;
+#sponsors p,
+#previous p,
+#speakers ul,
+#sponsors ul,
+#previous ul {
+  padding-right: 1em;
 }
 .container {
   width: 960px;
