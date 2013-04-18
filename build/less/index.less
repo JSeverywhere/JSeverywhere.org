@@ -1,0 +1,82 @@
+@import "globals/variables";
+@import "globals/mixins";
+@import "app";
+
+body {
+  background-color:@grayDark;
+  
+  }
+h1,h2,h3,h4,h5 {
+  font-family: 'Sanchez', serif;
+}
+.topics {
+  .makeRow();
+  ul {
+    .makeColumn(2);
+  }
+}
+#speakers, #sponsors {
+  .makeColumn(6);
+  p{
+    padding:1em;
+  }
+}
+.container {
+  width: 960px;
+  .border-radius(10px);
+  border:2px solid @black;
+  background-color:@grayLighter;
+  padding:2em 0em;
+  margin-top:1em;
+}
+#oneDay, #oneTrack, #oneRoom{
+  .makeColumn(4);
+}
+
+header {
+  color:@gray;
+  text-align:center;
+  .container {
+    padding-top:20px;
+    background-image: url(http://pix.lyle.troxell.com/photos/i-6X84cPK/0/XL/i-6X84cPK-XL.jpg);
+    margin-top:1em;
+  }
+}
+.imageFill {
+  text-align:center;
+  background-repeat: no-repeat;
+  height:540px;
+  padding: 0px;
+}
+.inside {
+  padding-top:20px;
+  h1, p {
+    background-color: #998888; ;
+    .opacity(70);
+    margin:auto;
+  }
+  
+  color:black;
+    background-image: url(http://pix.lyle.troxell.com/photos/i-BxkFcBR/0/XL/i-BxkFcBR-XL.jpg);
+}
+
+#tickets {
+  .makeColumn(6);
+  th:first-child, td:first-child {
+    text-align:right
+  }
+  td.available {text-align:center}
+  td.currency {text-align:right}
+  
+}
+
+
+
+
+
+#footer {
+  text-align:center;
+  margin-top:2em;
+  background-color: @gray;
+  color:black;
+}
