@@ -196,17 +196,22 @@ header .container {
 #tickets {
   float: left;
   margin-left: 20px;
-  width: 460px;
+  width: 620px;
 }
-#tickets th:first-child,
-#tickets td:first-child {
-  text-align: right;
+#sociallinks {
+  float: left;
+  margin-left: 20px;
+  width: 300px;
 }
-#tickets td.available {
-  text-align: center;
+#sociallinks ul {
+  list-style-type: none;
+  margin-left: 48px;
 }
-#tickets td.currency {
-  text-align: right;
+#sociallinks li {
+  display: inline-block;
+  width: 48px;
+  height: 60px;
+  vertical-align: top;
 }
 #footer {
   text-align: center;
