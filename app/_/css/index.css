@@ -172,8 +172,11 @@ header {
 }
 header .container {
   padding-top: 20px;
-  background-image: url(http://pix.lyle.troxell.com/photos/i-6X84cPK/0/XL/i-6X84cPK-XL.jpg);
+  background-image: url(http://pix.lyle.troxell.com/photos/i-MFgH4gG/0/XL/i-MFgH4gG-XL.jpg);
   margin-top: 1em;
+}
+header .container div {
+  padding-left: 190px;
 }
 .imageFill {
   text-align: center;
