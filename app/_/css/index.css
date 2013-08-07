@@ -216,6 +216,24 @@ header .container div {
   height: 60px;
   vertical-align: top;
 }
+.sponsors {
+  padding: 0px 1em;
+}
+.sponsors ul {
+  width: 320px;
+  margin: auto;
+}
+.sponsors ul.additional {
+  width: 160px;
+  margin: auto;
+}
+.sponsors li {
+  padding: 1em;
+  border-bottom: 1px solid #999;
+}
+.sponsors li:last-child {
+  border-bottom: none;
+}
 #footer {
   text-align: center;
   margin-top: 2em;
