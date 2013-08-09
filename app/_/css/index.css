@@ -226,6 +226,17 @@ header .container div {
 .sponsors ul.additional {
   width: 160px;
   margin: auto;
+  width: 100%;
+}
+.sponsors ul.additional li {
+  margin-left: 20px;
+  width: 300px;
+  display: block;
+  float: left;
+  border-bottom: none;
+}
+.sponsors h3 {
+  clear: both;
 }
 .sponsors li {
   padding: 1em;
@@ -233,6 +244,15 @@ header .container div {
 }
 .sponsors li:last-child {
   border-bottom: none;
+}
+.sponsors a img.secondary {
+  display: none;
+}
+.sponsors a:hover .primary {
+  display: none;
+}
+.sponsors a:hover .secondary {
+  display: block;
 }
 #footer {
   text-align: center;

@@ -85,6 +85,18 @@ header {
   }
   ul.additional {width:160px;
     margin:auto;
+    li {
+      .makeColumn(4);
+      display:block;
+      float:left;      
+      border-bottom:none;
+    }
+    width:100%;
+
+  }
+  
+  h3 {
+    clear:both;
   }
   li {
       padding:1em;
@@ -92,6 +104,17 @@ header {
   }
   li:last-child {
     border-bottom: none;
+  }
+  a img.secondary {
+    display:none;
+  }
+  a:hover {
+    .primary {
+        display:none;
+    }
+    .secondary {
+        display:block;
+    }
   }
 }
 
