@@ -260,3 +260,25 @@ header .container div {
   background-color: #555555;
   color: black;
 }
+header .container div.speakers {
+  text-align: left;
+  display: block;
+  position: relative;
+  width: 30em;
+  padding: .5em;
+  float: right;
+}
+header .container div.speakers a {
+  font-size: 130%;
+  color: black;
+  width: 10em;
+  display: inline-block;
+  text-align: right;
+  font-weight: bold;
+}
+header .container div.speakers ul {
+  margin: 1em 0em;
+}
+.warn {
+  padding: 0px 3em;
+}
