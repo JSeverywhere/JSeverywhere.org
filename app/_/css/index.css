@@ -220,8 +220,10 @@ header .container div {
   padding: 0px 1em;
 }
 .sponsors ul {
-  width: 320px;
   margin: auto;
+}
+.sponsors ul.plat {
+  width: 320px;
 }
 .sponsors ul.additional {
   width: 160px;
@@ -240,7 +242,6 @@ header .container div {
 }
 .sponsors li {
   padding: 1em;
-  border-bottom: 1px solid #999;
 }
 .sponsors li:last-child {
   border-bottom: none;
@@ -253,6 +254,12 @@ header .container div {
 }
 .sponsors a:hover .secondary {
   display: block;
+}
+.sponsors ul.main li {
+  display: inline-block;
+  list-style: none;
+  width: 400px;
+  margin: 0px 0px 15px 36px;
 }
 #footer {
   text-align: center;

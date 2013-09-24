@@ -13,17 +13,21 @@ var app = {
 	init: function() { 
 		//this.listeners();
 		console.log(this.settings.name + "(v" + this.settings.version + ") Started");
-		var speakerList = $('#speakerList').children('section');
-		console.log(speakerList);
-		if (speakerList) {
-			speakerList.sort(function(a,b){
+		this.randomList($('#speakerList'), 'section');
+		this.randomList($('#mainSponsors'),'li');
+	},
+	
+	randomList: function(target, itemSel) {
+		var daList = target.children(itemSel);
+		if (daList) {
+			daList.sort(function(a,b){
 				var temp = parseInt( Math.random()*10 );
 	            var temp = temp -5;
 	            return temp>0 ? 1 : -1;
-			}).prependTo($('#speakerList'));
+			}).prependTo(target);
 		}
 	},
-	
+
 	listeners: function() { 
 		// Application Listeners can be loaded here for easy configuration
 	},
