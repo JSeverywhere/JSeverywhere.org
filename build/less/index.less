@@ -147,3 +147,32 @@ header .container div.speakers {
 .warn {
   padding:0px 3em;
 }
+
+.speakers .note {margin-left: 1em;}
+.speakers section{
+  background-color: @white;
+  margin:10px;
+  display:inline-block;
+  text-align: center;
+  .border-radius(10px 10px);
+  border:2px solid @white;
+  width:280px;
+  a {display:block;font-size: 1.8em;
+    padding:5px;
+    color:@black;
+  }
+  h2, a{text-align: center; }
+  div.more {
+    display:none;
+  }
+  p{text-align: left;}
+}
+.speakers section:hover {
+  div.more{
+    display:block;
+    position:absolute;
+    z-index: 100;
+    background-color: white;
+    width:280px;
+  }
+}
