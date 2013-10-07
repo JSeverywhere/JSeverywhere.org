@@ -225,13 +225,13 @@ header .container div {
 }
 .sponsors ul {
   margin: auto;
+  margin-bottom: 2em;
 }
 .sponsors ul.plat {
   width: 320px;
 }
 .sponsors ul.additional {
   width: 160px;
-  margin: auto;
   width: 100%;
 }
 .sponsors ul.additional li {
@@ -264,6 +264,12 @@ header .container div {
   list-style: none;
   width: 400px;
   margin: 0px 0px 15px 36px;
+}
+.sponsors ul.speakerSponsors li {
+  display: inline-block;
+  list-style: none;
+  width: 250px;
+  margin: 0px 0px 15px 20px;
 }
 #footer {
   text-align: center;

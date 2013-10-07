@@ -15,6 +15,7 @@ var app = {
 		console.log(this.settings.name + "(v" + this.settings.version + ") Started");
 		this.randomList($('#speakerList'), 'section');
 		this.randomList($('#mainSponsors'),'li');
+		this.randomList($('#speakerSponsors'),'li');
 	},
 	
 	randomList: function(target, itemSel) {
