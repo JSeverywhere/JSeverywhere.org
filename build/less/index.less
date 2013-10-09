@@ -28,6 +28,10 @@ h1,h2,h3,h4,h5, p.lead {
   padding:2em 0em;
   margin-top:1em;
 }
+.container.speakers {
+  border:none;
+  background-color: transparent;
+}
 #oneDay, #oneTrack, #oneRoom{
   .makeColumn(4);
 }
@@ -91,18 +95,26 @@ header {
   ul.plat {
     width: 320px;
   }
-  ul.additional {width:160px;
+  ul.additional {
+    .makeColumn(7,1.5);
     li {
-      .makeColumn(4);
+      .makeColumn(3);
       display:block;
-      float:left;      
+      text-align: center; 
       border-bottom:none;
     }
     width:100%;
   }
+  ul.auction {
+    li {
+      .makeColumn(4);
+      img {float:right};
+    }
+  }
   
   h3 {
     clear:both;
+    text-align: center;
   }
   li {
       padding:1em;
@@ -171,9 +183,11 @@ header .container div.speakers {
   margin:10px;
   display:inline-block;
   text-align: center;
+  vertical-align: top;
   .border-radius(10px 10px);
   border:2px solid @white;
   width:280px;
+  height:280px;
   a {display:block;font-size: 1.8em;
     padding:5px;
     color:@black;
@@ -181,15 +195,15 @@ header .container div.speakers {
   h2, a{text-align: center; }
   div.more {
     display:none;
+    position:absolute;
+    z-index: 100;
+    background-color: white;
+    width:280px;
   }
   p{text-align: left;}
 }
 .speakers section:hover {
   div.more{
     display:block;
-    position:absolute;
-    z-index: 100;
-    background-color: white;
-    width:280px;
   }
 }

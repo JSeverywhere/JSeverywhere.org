@@ -159,6 +159,10 @@ p.lead {
   padding: 2em 0em;
   margin-top: 1em;
 }
+.container.speakers {
+  border: none;
+  background-color: transparent;
+}
 #oneDay,
 #oneTrack,
 #oneRoom {
@@ -231,18 +235,30 @@ header .container div {
   width: 320px;
 }
 .sponsors ul.additional {
-  width: 160px;
+  float: left;
+  margin-left: 140px;
+  width: 540px;
   width: 100%;
 }
 .sponsors ul.additional li {
+  float: left;
+  margin-left: 20px;
+  width: 220px;
+  display: block;
+  text-align: center;
+  border-bottom: none;
+}
+.sponsors ul.auction li {
+  float: left;
   margin-left: 20px;
   width: 300px;
-  display: block;
-  float: left;
-  border-bottom: none;
+}
+.sponsors ul.auction li img {
+  float: right;
 }
 .sponsors h3 {
   clear: both;
+  text-align: center;
 }
 .sponsors li {
   padding: 1em;
@@ -307,6 +323,7 @@ header .container div.speakers ul {
   margin: 10px;
   display: inline-block;
   text-align: center;
+  vertical-align: top;
   -webkit-border-radius: 10px 10px;
   -moz-border-radius: 10px 10px;
   border-radius: 10px 10px;
@@ -315,6 +332,7 @@ header .container div.speakers ul {
   border-radius: 10px 10px 5px 5px 5px;
   border: 2px solid #ffffff;
   width: 280px;
+  height: 280px;
 }
 .speakers section a {
   display: block;
@@ -328,14 +346,14 @@ header .container div.speakers ul {
 }
 .speakers section div.more {
   display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  width: 280px;
 }
 .speakers section p {
   text-align: left;
 }
 .speakers section:hover div.more {
   display: block;
-  position: absolute;
-  z-index: 100;
-  background-color: white;
-  width: 280px;
 }

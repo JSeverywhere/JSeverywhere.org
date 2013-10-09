@@ -22,9 +22,7 @@ var app = {
 		var daList = target.children(itemSel);
 		if (daList) {
 			daList.sort(function(a,b){
-				var temp = parseInt( Math.random()*10 );
-	            var temp = temp -5;
-	            return temp>0 ? 1 : -1;
+	            return parseInt( Math.random()*10 ) > 5 ? 1 : -1;
 			}).prependTo(target);
 		}
 	},
