@@ -159,10 +159,6 @@ p.lead {
   padding: 2em 0em;
   margin-top: 1em;
 }
-.container.speakers {
-  border: none;
-  background-color: transparent;
-}
 #oneDay,
 #oneTrack,
 #oneRoom {
@@ -320,7 +316,7 @@ header .container div.speakers ul {
 }
 .speakers section {
   background-color: #ffffff;
-  margin: 10px;
+  margin: 10px 18px;
   display: inline-block;
   text-align: center;
   vertical-align: top;
