@@ -75,8 +75,15 @@ header {
   .makeColumn(8);
 }
 #sociallinks {
+  margin-top:3em;
+  .logo, ul{
+    .makeColumn(4);
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: 0px;
+  }
   .makeColumn(4);
-  ul {list-style-type:none;margin-left:48px}
+  
   li {
     display:inline-block;
     width:48px;
@@ -205,4 +212,36 @@ header .container div.speakers {
   div.more{
     display:block;
   }
+
+
+}
+.container div.head {
+  margin-left:1em;
+}
+
+.shuttle, .address{
+  .makeColumn(6);
+  ul{margin-left: 1em}
+  li{list-style: disc;}
+}
+.shuttletimes, .schedule{
+  .makeColumn(5);
+  th{text-align: left;}
+}
+nav.navbar-static-top{
+  position:fixed;
+  width:100%;
+}
+
+.navbar-nav {
+  text-align: center;
+  a {color:black;
+  background-color: #22dd00;
+  font-size: 2em;
+  padding:.2em;}
+  li:hover{color:white;background-color:black;}
+}
+
+#wrapper{
+  padding-top:2em;
 }

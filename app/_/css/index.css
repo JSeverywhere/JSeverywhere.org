@@ -206,13 +206,19 @@ header .container div {
   width: 620px;
 }
 #sociallinks {
+  margin-top: 3em;
   float: left;
   margin-left: 20px;
   width: 300px;
 }
+#sociallinks .logo,
 #sociallinks ul {
-  list-style-type: none;
-  margin-left: 48px;
+  float: left;
+  margin-left: 20px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-left: 0px;
 }
 #sociallinks li {
   display: inline-block;
@@ -352,4 +358,51 @@ header .container div.speakers ul {
 }
 .speakers section:hover div.more {
   display: block;
+}
+.container div.head {
+  margin-left: 1em;
+}
+.shuttle,
+.address {
+  float: left;
+  margin-left: 20px;
+  width: 460px;
+}
+.shuttle ul,
+.address ul {
+  margin-left: 1em;
+}
+.shuttle li,
+.address li {
+  list-style: disc;
+}
+.shuttletimes,
+.schedule {
+  float: left;
+  margin-left: 20px;
+  width: 380px;
+}
+.shuttletimes th,
+.schedule th {
+  text-align: left;
+}
+nav.navbar-static-top {
+  position: fixed;
+  width: 100%;
+}
+.navbar-nav {
+  text-align: center;
+}
+.navbar-nav a {
+  color: black;
+  background-color: #22dd00;
+  font-size: 2em;
+  padding: .2em;
+}
+.navbar-nav li:hover {
+  color: white;
+  background-color: black;
+}
+#wrapper {
+  padding-top: 2em;
 }
