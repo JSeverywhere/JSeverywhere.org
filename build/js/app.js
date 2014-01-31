@@ -12,7 +12,7 @@ var app = {
 	init: function() {
 		//this.listeners();
 		console.log(this.settings.name + "(v" + this.settings.version + ") Started");
-		this.randomList($('#speakerList'), 'section');
+		this.randomList($('#videos'), 'div.movieWrap');
 		this.randomList($('#mainSponsors'),'li');
 		this.randomList($('#speakerSponsors'),'li');
 	},
@@ -29,7 +29,7 @@ var app = {
 	},
 	settings: {
 		name: "JS.everywhere(2013)",
-		version: "1.1.0",
+		version: "1.2.0",
 		ga_analytics: "UA-30228440-1"
 	}
 };
